@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Shop App</title>
+    <style>
+        ul>li {
+            display: inline;
+            padding: 55px;
+        }
+        
+        a {
+            cursor: pointer;
+            text-decoration: underline;
+            color: blue;
+        }
+
+    </style>
+    <script src=../lib/angular.min.js></script>
+    <script src="angular-route.min.js"></script>
+    <script src="app.js"></script>
+    <script src="contactcontroller.js"></script>
+    <script src="mobilecontroller.js"></script>
+    <script src="spa.js"></script>
+
+</head>
+
+<body ng-app="shopapp">
+    <header>
+        <h1>Welcome to Shop</h1>
+        <ul>
+            <li><a ng-href="">Shoes</a></li>
+            <li><a ng-href="#/mobiles">mobiles</a></li>
+            <li><a ng-href="#/contact/Amit/Srivastava">ContactUs</a></li>
+            <li><a ng-href="#/">AboutUs</a></li>
+        </ul>
+    </header>
+    <section>
+        <fieldset>
+            <legend>Content</legend>
+            <ng-view></ng-view>
+        </fieldset>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <footer>Terms and Conditions</footer>
+</body>
+
+</html>

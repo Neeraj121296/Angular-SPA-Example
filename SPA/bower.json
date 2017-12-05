@@ -1,0 +1,20 @@
+{
+  "name": "spa_123",
+  "main": "index.html",
+  "description": "this is a single page application",
+  "authors": [
+    "Neeraj Joshi"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.6.6"
+  }
+}
